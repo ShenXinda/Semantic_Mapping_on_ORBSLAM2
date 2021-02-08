@@ -1,0 +1,12 @@
+penson
+cup
+chair
+tv
+laptop
+mouse
+keyboard
+cell-phone
+book
+desk
+floor
+wall
