@@ -32,7 +32,7 @@ def recvall(sock, count):
         return buf
 
 
-
+# 语义分割模型初始化
 inference.init()
 
 # 使用 with as 语句操作上下文管理器（context manager），它能够帮助我们自动分配并且释放资源。
@@ -63,6 +63,8 @@ with socket(AF_INET,SOCK_STREAM) as tcpSerSock:
 
                 print("The file size: ",(int)(count))
                 stringData = recvall(tcpClientSock,(int)(count))
+                if not stringData:
+                    break
 
                 data = np.frombuffer(stringData, np.uint8)
                 img = cv2.imdecode(data, cv2.IMREAD_COLOR)  # 将数组解码成图像

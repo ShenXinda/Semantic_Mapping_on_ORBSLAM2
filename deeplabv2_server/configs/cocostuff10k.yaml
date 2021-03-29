@@ -4,10 +4,10 @@ EXP:
 
 DATASET:
     NAME: cocostuff10k
-    ROOT: /media/Files/Dataset/cocostuff10k  #/media/kazuto1011/Extra/cocostuff/cocostuff-10k-v1.1
-    LABELS: /home/xshen/my_workspace/deeplab-pytorch/data/datasets/cocostuff/labels.txt  # CPython中运行，最好写成绝对路径
+    ROOT: /media/Files/Dataset/cocostuff10k  #数据集路径
+    LABELS: data/datasets/cocostuff/labels.txt 
     N_CLASSES: 182
-    IGNORE_LABEL: 255 # 12, 26, 29, 30, 45, 66, 67, 68, 69, 71, 83, 91
+    IGNORE_LABEL: 255 
     SCALES: [0.5, 0.75, 1.0, 1.25, 1.5]
     SPLIT:
         TRAIN: train
@@ -31,7 +31,7 @@ MODEL:
     NAME: DeepLabV2_ResNet101_MSC
     N_BLOCKS: [3, 4, 23, 3]
     ATROUS_RATES: [6, 12, 18, 24]  # 空洞卷积率
-    INIT_MODEL: /home/xshen/my_workspace/deeplab-pytorch/data/models/coco/deeplabv1_resnet101/caffemodel/deeplabv1_resnet101-coco.pth
+    INIT_MODEL: data/models/coco/deeplabv1_resnet101/caffemodel/deeplabv1_resnet101-coco.pth
 
 SOLVER:
     BATCH_SIZE:

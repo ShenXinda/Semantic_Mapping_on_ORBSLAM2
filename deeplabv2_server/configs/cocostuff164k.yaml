@@ -4,8 +4,8 @@ EXP:
 
 DATASET:
     NAME: cocostuff164k
-    ROOT: /media/Files/Dataset/coco # /media/kazuto1011/Extra/cocostuff/cocostuff-164k
-    LABELS: /home/xshen/my_workspace/deeplab-pytorch/data/datasets/cocostuff/labels.txt # ./data/datasets/cocostuff/labels.txt
+    ROOT: /media/Files/Dataset/coco 
+    LABELS: data/datasets/cocostuff/labels.txt
     N_CLASSES: 182
     IGNORE_LABEL: 255
     SCALES: [0.5, 0.75, 1.0, 1.25, 1.5]

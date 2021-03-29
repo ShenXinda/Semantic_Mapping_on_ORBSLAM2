@@ -66,7 +66,6 @@ ${Pangolin_INCLUDE_DIRS}
 
 ${PCL_INCLUDE_DIRS}
 ${catkin_INCLUDE_DIRS}
-"/home/xshen/Anaconda3/envs/deeplab-pytorch/include/python3.6m"
 )
 
 add_definitions( ${PCL_DEFINITIONS} )
@@ -79,13 +78,11 @@ ${Pangolin_LIBRARIES}
 ${PROJECT_SOURCE_DIR}/../../../Thirdparty/DBoW2/lib/libDBoW2.so
 ${PROJECT_SOURCE_DIR}/../../../Thirdparty/g2o/lib/libg2o.so
 ${PROJECT_SOURCE_DIR}/../../../lib/libORB_SLAM2.so
-/usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/usr/lib/x86_64-linux-gnu/libboost_system.so
+# /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+# /usr/lib/x86_64-linux-gnu/libboost_system.so
 
 ${PCL_LIBRARIES}
 ${catkin_LIBRARIES} 
-"/home/xshen/Anaconda3/envs/deeplab-pytorch/lib/python3.6"
-"/home/xshen/Anaconda3/envs/deeplab-pytorch/lib/libpython3.6m.so"
 )
 
 # Node for monocular camera
